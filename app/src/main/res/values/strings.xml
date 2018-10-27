@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio</string>
+    <string name="titulo">Juego Clasicos</string>
+    <string name="subtitulo">Piedra, Papel y Tijera</string>
+    <string name="title_activity_Nuevo">Jugador</string>
+    <string name="title_activity_jugar">Jugar</string>
+    <string name="title_activity_prueba">prueba</string>
+    <string name="title_activity_jgjhgjhy">jgjhgjhy</string>
+    <string name="title_activity_puntaje">Puntaje</string>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView android:text="@string/titulo" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtView1" />
+
+    <Button
+        android:id="@+id/btnNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInicia"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:onClick="onClickButton"
+        android:text="Nuevo Jugador" />
+
+    <Button
+        android:id="@+id/btnInicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnNuevo"
+        android:layout_alignLeft="@+id/txtView2"
+        android:layout_alignRight="@+id/btnNuevo"
+        android:layout_alignStart="@+id/txtView2"
+        android:layout_centerVertical="true"
+        android:onClick="onClickButton"
+        android:text="Iniciar Juego" />
+
+    <Button
+        android:id="@+id/btnPuntaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnNuevo"
+        android:layout_alignLeft="@+id/btnInicia"
+        android:layout_alignRight="@+id/btnNuevo"
+        android:layout_alignStart="@+id/btnInicia"
+        android:layout_below="@+id/btnInicia"
+        android:layout_marginTop="61dp"
+        android:onClick="onClickButton"
+        android:text="Puntaje" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/subtitulo"
+        android:id="@+id/txtView2"
+        android:layout_below="@+id/txtView1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Programacion de Dispositivos Moviles"
+        android:id="@+id/txtview3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Inicia">
+
+    <TextView android:text="Juego Iniciado!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtTitulo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Puntos:"
+        android:id="@+id/txtPuntosT"
+        android:layout_below="@+id/txtTitulo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtPuntos"
+        android:layout_alignTop="@+id/txtPuntosT"
+        android:layout_toRightOf="@+id/txtPuntosT"
+        android:layout_toEndOf="@+id/txtPuntosT"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:id="@+id/btnFin"
+        android:layout_alignBaseline="@+id/txtPuntos"
+        android:layout_alignBottom="@+id/txtPuntos"
+        android:layout_toRightOf="@+id/txtTitulo"
+        android:layout_toEndOf="@+id/txtTitulo"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CPU"
+        android:id="@+id/txtCPU"
+        android:layout_below="@+id/btnFin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#010101" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/btnCPU"
+        android:layout_below="@+id/txtCPU"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="VS"
+        android:id="@+id/textView"
+        android:textColor="#010101"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Player"
+        android:id="@+id/txtPlayer"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#020202" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O"
+        android:id="@+id/btnPiedra"
+        android:layout_below="@+id/txtPlayer"
+        android:layout_toLeftOf="@+id/btnCPU"
+        android:layout_toStartOf="@+id/btnCPU"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toStartOf="@+id/btnCPU"
+        android:text="Piedra"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[_]"
+        android:id="@+id/btnPapel"
+        android:layout_alignTop="@+id/btnPiedra"
+        android:layout_toRightOf="@+id/btnPiedra"
+        android:layout_toEndOf="@+id/btnPiedra" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:text="Papel"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:id="@+id/btnTIjera"
+        android:layout_alignBottom="@+id/btnPapel"
+        android:layout_toRightOf="@+id/btnPapel"
+        android:layout_toEndOf="@+id/btnPapel" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:layout_toEndOf="@+id/btnCPU"
+        android:text="Tijera"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ganados:"
+        android:id="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtGanado"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/txtPuntosT"
+        android:layout_toEndOf="@+id/txtPuntosT"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Empatados:"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/txtGanado"
+        android:layout_alignBottom="@+id/txtGanado"
+        android:layout_toRightOf="@+id/btnPiedra"
+        android:layout_toEndOf="@+id/btnPiedra" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtEmpatados"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Perdidos:"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/txtEmpatados"
+        android:layout_alignBottom="@+id/txtEmpatados"
+        android:layout_marginRight="20dp"
+        android:layout_alignRight="@+id/btnTIjera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/txtPerdedor"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignRight="@+id/btnFin"
+        android:layout_alignEnd="@+id/btnFin"
+        android:layout_marginRight="18dp" />
+
+
+</RelativeLayout>
